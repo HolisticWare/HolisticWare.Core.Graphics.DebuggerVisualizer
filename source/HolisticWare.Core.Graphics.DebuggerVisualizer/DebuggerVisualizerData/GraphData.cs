@@ -4,45 +4,6 @@ using Newtonsoft.Json;
 
 namespace Core.Graphics.DebuggerVisualizer
 {
-    [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
-    public abstract class ExtractedData
-    {
-        [JsonProperty("kind")]
-        public Dictionary<string, bool> Kind
-        {
-            get
-            {
-                var d = new Dictionary<string, bool>();
-                foreach (var tag in Tags)
-                {
-                    d.Add(tag, true);
-                }
-                return d;
-            }
-        }
-
-        [JsonIgnore]
-        public abstract string[] Tags { get; }
-
-        public override string ToString()
-        {
-            return JsonConvert.SerializeObject(this);
-        }
-    }
-
-    public class TextData : ExtractedData
-    {
-        public override string[] Tags => new string[] { "text" };
-
-        [JsonProperty("text")]
-        public string TextValue { get; set; }
-
-        public TextData(string text)
-        {
-            this.TextValue = text;
-        }
-    }
-
     public class GraphData : ExtractedData
     {
         public override string[] Tags => new string[] { "graph" };
@@ -180,5 +141,6 @@ namespace Core.Graphics.DebuggerVisualizer
             }
         }
     }
+
 }
 
