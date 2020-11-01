@@ -2,7 +2,7 @@ using System;
 
 namespace Core.Graphics.DebuggerVisualizer
 {
-    public class LinkedList<T>
+    public class LinkedList<T> : IDebuggerVisualizer
     {
         class Node
         {
