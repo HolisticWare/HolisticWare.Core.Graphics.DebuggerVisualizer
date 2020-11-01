@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Original", "Sample.O
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{424212B1-950E-4D85-A80D-D15A915F2981}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Core.Graphics.DebuggerVisualizer", "..\source\HolisticWare.Core.Graphics.DebuggerVisualizer\HolisticWare.Core.Graphics.DebuggerVisualizer.csproj", "{1F11DA98-CEDD-4AD7-A27B-62A812C57F20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Core.Graphics.DebuggerVisualizer", "..\..\..\source\HolisticWare.Core.Graphics.DebuggerVisualizer\HolisticWare.Core.Graphics.DebuggerVisualizer.csproj", "{1F11DA98-CEDD-4AD7-A27B-62A812C57F20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
