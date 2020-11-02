@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Core.Graphics.DebuggerVisualizer
+namespace Core.Graphics.DebuggerVisualizer.Legacy
 {
     [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
     public abstract class ExtractedData
@@ -22,7 +22,10 @@ namespace Core.Graphics.DebuggerVisualizer
         }
 
         [JsonIgnore]
-        public abstract string[] Tags { get; }
+        public abstract string[] Tags
+        {
+            get;
+        }
 
         public override string ToString()
         {

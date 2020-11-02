@@ -2,17 +2,25 @@ using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Core.Graphics.DebuggerVisualizer
+namespace Core.Graphics.DebuggerVisualizer.Legacy
 {
     public class GraphData : ExtractedData
     {
         public override string[] Tags => new string[] { "graph" };
 
         [JsonProperty("nodes")]
-        public IList<NodeData> Nodes { get; set; } = new List<NodeData>();
+        public IList<NodeData> Nodes
+        {
+            get;
+            set;
+        } = new List<NodeData>();
 
         [JsonProperty("edges")]
-        public IList<EdgeData> Edges { get; set; } = new List<EdgeData>();
+        public IList<EdgeData> Edges
+        {
+            get;
+            set;
+        } = new List<EdgeData>();
 
         [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
         public class NodeData
@@ -23,16 +31,32 @@ namespace Core.Graphics.DebuggerVisualizer
             }
 
             [JsonProperty("id")]
-            public string Id { get; set; }
+            public string Id
+            {
+                get;
+                set;
+            }
 
             [JsonProperty("label")]
-            public string? Label { get; set; }
+            public string? Label
+            {
+                get;
+                set;
+            }
 
             [JsonProperty("color")]
-            public string? Color { get; set; }
+            public string? Color
+            {
+                get;
+                set;
+            }
 
             [JsonProperty("shape")]
-            public string? Shape { get; set; }
+            public string? Shape
+            {
+                get;
+                set;
+            }
         }
 
         [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
@@ -46,22 +70,46 @@ namespace Core.Graphics.DebuggerVisualizer
             }
 
             [JsonProperty("from")]
-            public string From { get; set; }
+            public string From
+            {
+                get;
+                set;
+            }
 
             [JsonProperty("to")]
-            public string To { get; set; }
+            public string To
+            {
+                get;
+                set;
+            }
 
             [JsonProperty("label")]
-            public string? Label { get; set; }
+            public string? Label
+            {
+                get;
+                set;
+            }
 
             [JsonProperty("id")]
-            public string? Id { get; set; }
+            public string? Id
+            {
+                get;
+                set;
+            }
 
             [JsonProperty("color")]
-            public string? Color { get; set; }
+            public string? Color
+            {
+                get;
+                set;
+            }
 
             [JsonProperty("dashes")]
-            public bool? Dashes { get; set; }
+            public bool? Dashes
+            {
+                get;
+                set;
+            }
         }
 
         public static GraphData From<T>(IEnumerable<T> items, Func<T, NodeInfo<T>, NodeInfo<T>> f) where T : notnull
@@ -114,10 +162,29 @@ namespace Core.Graphics.DebuggerVisualizer
 
         public class NodeInfo<T>
         {
-            public IList<EdgeInfo<T>> Edges { get; set; } = new List<EdgeInfo<T>>();
-            public string? Label { get; set; }
-            public string? Id { get; set; }
-            public string? Color { get; set; }
+            public IList<EdgeInfo<T>> Edges
+            {
+                get;
+                set;
+            } = new List<EdgeInfo<T>>();
+
+            public string? Label
+            {
+                get;
+                set;
+            }
+
+            public string? Id
+            {
+                get;
+                set;
+            }
+
+            public string? Color
+            {
+                get;
+                set;
+            }
 
             public NodeInfo<T> AddEdge(T to, string? id = null, string? label = null)
             {
@@ -131,9 +198,23 @@ namespace Core.Graphics.DebuggerVisualizer
 
         public class EdgeInfo<T>
         {
-            public T To { get; set; }
-            public string? Label { get; set; }
-            public string? Id { get; set; }
+            public T To
+            {
+                get;
+                set;
+            }
+
+            public string? Label
+            {
+                get;
+                set;
+            }
+
+            public string? Id
+            {
+                get;
+                set;
+            }
 
             public EdgeInfo(T to)
             {

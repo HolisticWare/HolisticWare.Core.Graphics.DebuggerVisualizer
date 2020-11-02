@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Core.Graphics.DebuggerVisualizer
+namespace Core.Graphics.DebuggerVisualizer.Legacy
 {
     public class TextData : ExtractedData
     {

@@ -10,5 +10,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DebuggerVisualizerData\" />
+    <Folder Include="Legacy\" />
   </ItemGroup>
 </Project>

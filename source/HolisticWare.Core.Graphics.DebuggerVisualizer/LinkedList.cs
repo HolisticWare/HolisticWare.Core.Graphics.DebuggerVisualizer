@@ -1,4 +1,5 @@
 using System;
+using Core.Graphics.DebuggerVisualizer.Legacy;
 
 namespace Core.Graphics.DebuggerVisualizer
 {
