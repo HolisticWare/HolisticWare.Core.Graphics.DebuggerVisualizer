@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Core.Graphics.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.CodeGeneration", "Sample.CodeGeneration\Sample.CodeGeneration.csproj", "{2BF9765A-AA5E-4209-B1D7-B7ACE457158B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.20201102", "Sample.20201102\Sample.20201102.csproj", "{1290122A-9A75-4C35-91EC-453401488F88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{2BF9765A-AA5E-4209-B1D7-B7ACE457158B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BF9765A-AA5E-4209-B1D7-B7ACE457158B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BF9765A-AA5E-4209-B1D7-B7ACE457158B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1290122A-9A75-4C35-91EC-453401488F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1290122A-9A75-4C35-91EC-453401488F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1290122A-9A75-4C35-91EC-453401488F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1290122A-9A75-4C35-91EC-453401488F88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1F11DA98-CEDD-4AD7-A27B-62A812C57F20} = {424212B1-950E-4D85-A80D-D15A915F2981}
