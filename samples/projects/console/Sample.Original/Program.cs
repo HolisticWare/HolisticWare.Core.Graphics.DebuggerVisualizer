@@ -27,7 +27,7 @@ namespace Sample.Original
             list.Append(2);
             list.Append(3);
             list.Append(4);
-            
+
             Console.WriteLine("Hello World!");
 
 
