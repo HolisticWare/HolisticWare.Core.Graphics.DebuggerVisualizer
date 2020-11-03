@@ -26,7 +26,7 @@ namespace Core.Graphics.DebuggerVisualizer.System.Collections.Generic
             for (int i = 0; i < n; i++)
             {
                 data.Append($@"{collection.ElementAt(i)}");
-                if (i < n)
+                if (i < n - 1)
                 {
                     data.Append(", ");
                 }
@@ -55,7 +55,7 @@ namespace Core.Graphics.DebuggerVisualizer.System.Collections.Generic
                 for (int i = 0; i < n; i++)
                 {
                     data.Append($@"{collection.ElementAt(i)}");
-                    if (i < n)
+                    if (i < n - 1)
                     {
                         data.Append(", ");
                     }

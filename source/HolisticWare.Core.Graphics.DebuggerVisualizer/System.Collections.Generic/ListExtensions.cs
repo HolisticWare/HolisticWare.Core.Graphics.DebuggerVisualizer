@@ -8,22 +8,58 @@ namespace Core.Graphics.DebuggerVisualizer.System.Collections.Generic
     {
         public static string Visualize<T>(this List<T> collection)
         {
-            StringBuilder data = new StringBuilder();
-            int n = collection.Count();
-            data.Append($@"{{ ");
-            data.Append($@" ""y"" : [ ");
-            for (int i = 0; i < n; i++)
-            {
-                data.Append($"{collection.ElementAt(i)}");
-                if (i < n - 1)
-                {
-                    data.Append(", ");
-                }
-            }
-            data.Append(" ]");
-            data.Append($@" }}");
+            List<List<T>> multi_collection = new List<List<T>>();
+            multi_collection.Add(collection);
 
-            string json = Plotly.Data.Replace("placeholder_data_array", data.ToString());
+            return multi_collection.Visualize();
+        }
+
+        public static string Visualize<T>(this List<List<T>> collection)
+        {
+            int m = collection.Count();
+
+            string json = Plotly.Data;
+
+            for (int j = 0; j < m; j++)
+            {
+                int n = collection.ElementAt(j).Count();
+
+                StringBuilder data = new StringBuilder();
+                data.Append($@"{{ ");
+                data.Append($@"""y"" : ");
+                data.Append($@"[ ");
+                for (int i = 0; i < n; i++)
+                {
+                    data.Append($@"{collection.ElementAt(j).ElementAt(i)}");
+                    if (i < n - 1)
+                    {
+                        data.Append(", ");
+                    }
+                }
+                data.Append($@" ]");
+                data.Append($@" }}");
+
+                if (j < m - 1)
+                {
+                    json = json.Replace
+                                    (
+                                        "placeholder_data_array",
+                                        data
+                                            .AppendLine(",")
+                                            .Append("                            ")
+                                            .Append("placeholder_data_array")
+                                            .ToString()
+                                    );
+                }
+                else
+                {
+                    json = json.Replace
+                                    (
+                                        "placeholder_data_array",
+                                        data.ToString()
+                                    );
+        }
+            }
 
             return json;
         }
