@@ -42,7 +42,7 @@ At Terminal CLI enter command: dotnet build
 
 After the build process finishes, enter command: dotnet run
 
-Now is time for Debugging and Visalizing !!!
+Now is time for Debugging and Visualizing !!!
 
 Click on Debug mode in VS Code
 
