@@ -26,7 +26,7 @@ How to use VS Code Data Visualizer in few easy steps
 
 Clone HolisticWare.Core.Graphics.DebuggerVisualizer GitHub 
 
-Open Samples -> Projects -> Console -> Sampple.2020110
+Open Samples -> Projects -> Console -> Sample.2020110
 
 Open Program.cs or (if you have VS Code in you local path) just put command code -n . at Terminal CLI
 
