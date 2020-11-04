@@ -8,16 +8,11 @@
       
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.CodeDom" Version="4.7.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DebuggerVisualizerData\" />
     <Folder Include="Legacy\" />
     <Folder Include="System.Collections.Generic\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="DebuggerVisualizerData\Schema.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="DebuggerVisualizerData\Schema.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
   </ItemGroup>
 </Project>

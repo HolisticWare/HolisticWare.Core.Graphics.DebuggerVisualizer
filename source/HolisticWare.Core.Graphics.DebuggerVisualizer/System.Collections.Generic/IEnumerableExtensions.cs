@@ -34,7 +34,7 @@ namespace Core.Graphics.DebuggerVisualizer.System.Collections.Generic
             data.Append($@" ]");
             data.Append($@" }}");
 
-            string json = Plotly.Data.Replace("placeholder_data_array", data.ToString());
+            string json = new Plotly().Data().Replace("placeholder_data_array", data.ToString());
 
             return json;
         }
@@ -63,7 +63,7 @@ namespace Core.Graphics.DebuggerVisualizer.System.Collections.Generic
                 data.Append($@" ]");
                 data.Append($@" }}");
 
-                json = Plotly.Data.Replace("placeholder_data_array", data.ToString());
+                json = new Plotly().Data().Replace("placeholder_data_array", data.ToString());
             }
 
             return json;

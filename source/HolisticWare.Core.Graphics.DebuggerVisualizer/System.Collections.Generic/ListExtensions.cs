@@ -18,48 +18,9 @@ namespace Core.Graphics.DebuggerVisualizer.System.Collections.Generic
         {
             int m = collection.Count();
 
-            string json = Plotly.Data;
+            // https://www.newtonsoft.com/json/help/html/CreatingLINQtoJSON.htm
 
-            for (int j = 0; j < m; j++)
-            {
-                int n = collection.ElementAt(j).Count();
-
-                StringBuilder data = new StringBuilder();
-                data.Append($@"{{ ");
-                data.Append($@"""y"" : ");
-                data.Append($@"[ ");
-                for (int i = 0; i < n; i++)
-                {
-                    data.Append($@"{collection.ElementAt(j).ElementAt(i)}");
-                    if (i < n - 1)
-                    {
-                        data.Append(", ");
-                    }
-                }
-                data.Append($@" ]");
-                data.Append($@" }}");
-
-                if (j < m - 1)
-                {
-                    json = json.Replace
-                                    (
-                                        "placeholder_data_array",
-                                        data
-                                            .AppendLine(",")
-                                            .Append("                            ")
-                                            .Append("placeholder_data_array")
-                                            .ToString()
-                                    );
-                }
-                else
-                {
-                    json = json.Replace
-                                    (
-                                        "placeholder_data_array",
-                                        data.ToString()
-                                    );
-        }
-            }
+            string json = new Plotly().Data(collection);
 
             return json;
         }
