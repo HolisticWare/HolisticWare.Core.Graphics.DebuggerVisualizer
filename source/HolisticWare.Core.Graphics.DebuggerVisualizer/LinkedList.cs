@@ -45,5 +45,10 @@ namespace Core.Graphics.DebuggerVisualizer
                 return info;
             }).ToString();
         }
+
+        public string ToString()
+        {
+            return Visualize();
+        }
     }
 }
