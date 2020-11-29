@@ -9,6 +9,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\source\HolisticWare.Core.Graphics.DebuggerVisualizer\HolisticWare.Core.Graphics.DebuggerVisualizer.csproj" />
+    <ProjectReference Include="..\..\..\..\..\source\HolisticWare.Core.Graphics.DebuggerVisualizer\HolisticWare.Core.Graphics.DebuggerVisualizer.csproj" />
+    <ProjectReference Include="..\..\..\..\..\source\HolisticWare.Core.Graphics.DebuggerVisualizer\HolisticWare.Core.Graphics.DebuggerVisualizer.Legacy.csproj" />
   </ItemGroup>
 </Project>

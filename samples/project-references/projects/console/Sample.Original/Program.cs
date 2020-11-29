@@ -10,8 +10,14 @@ namespace Sample.Original
         {
             /*
             Install: 
-                Debug Visualizer
-                hediet.debug-visualizer
+                for Visual Studio Code - 
+                    Debug Visualizer
+                    hediet.debug-visualizer
+            */
+
+            /*
+            moved to project:
+            HolisticWare.Core.Graphics.DebuggerVisualizer.Legacy
             */
             LinkedList<int> list = new LinkedList<int>();
             /* 
