@@ -4,6 +4,10 @@ VisualStudioVersion = 16.0.30524.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Core.Graphics.DebuggerVisualizer", "HolisticWare.Core.Graphics.DebuggerVisualizer\HolisticWare.Core.Graphics.DebuggerVisualizer.csproj", "{975E5E27-A7C0-495B-A934-16485D78D8E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Core.Graphics.DebuggerVisualizer.Data", "HolisticWare.Core.Graphics.DebuggerVisualizer.Data\HolisticWare.Core.Graphics.DebuggerVisualizer.Data.csproj", "{10DA9A3E-4BB2-4B4E-8C6E-C86BF7E85FD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolisticWare.Core.Graphics.DebuggerVisualizer.Legacy", "HolisticWare.Core.Graphics.DebuggerVisualizer.Legacy\HolisticWare.Core.Graphics.DebuggerVisualizer.Legacy.csproj", "{10BA9A7B-714B-49F5-A659-76126C70C33B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,5 +18,13 @@ Global
 		{975E5E27-A7C0-495B-A934-16485D78D8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{975E5E27-A7C0-495B-A934-16485D78D8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{975E5E27-A7C0-495B-A934-16485D78D8E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10DA9A3E-4BB2-4B4E-8C6E-C86BF7E85FD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10DA9A3E-4BB2-4B4E-8C6E-C86BF7E85FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10DA9A3E-4BB2-4B4E-8C6E-C86BF7E85FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10DA9A3E-4BB2-4B4E-8C6E-C86BF7E85FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BA9A7B-714B-49F5-A659-76126C70C33B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BA9A7B-714B-49F5-A659-76126C70C33B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BA9A7B-714B-49F5-A659-76126C70C33B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BA9A7B-714B-49F5-A659-76126C70C33B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
