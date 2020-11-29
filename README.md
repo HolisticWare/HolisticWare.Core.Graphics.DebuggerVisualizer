@@ -4,7 +4,9 @@ HolisticWare.Core.Graphics.DebuggerVisualizer
 
 ## References / Links
 
-*   https://hediet.github.io/visualization/?darkTheme=1
+*   https://hediet.github.io/visualization
+
+    *   https://hediet.github.io/visualization/?darkTheme=1
 *   
 *   https://marketplace.visualstudio.com/items?itemName=hediet.debug-visualizer
 
@@ -31,6 +33,8 @@ HolisticWare.Core.Graphics.DebuggerVisualizer
     *   Raw JSON (plain text) chart schema for every chart type: 
     
         *   https://api.plot.ly/v2/plot-schema?format=json&sha1=%27%27
+
+
 
 
 ## How to use VS Code Data Visualizer in few easy steps
