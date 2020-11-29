@@ -41,6 +41,7 @@
         </PackageIconUrl>
         <license>LICENSE</license>
         <licenseUrl>
+            https://github.com/HolisticWare/HolisticWare.Core.Graphics.DebuggerVisualizer/blob/master/LICENSE
         </licenseUrl>
         <PackageLicenseUrl>
             https://github.com/HolisticWare/HolisticWare.Core.Graphics.DebuggerVisualizer/blob/master/LICENSE
@@ -49,7 +50,7 @@
         <!--
         VersionSuffix - For debugging and local nuget feed 
         -->        
-        <VersionSuffix>alpha-$([System.DateTime]::Now.ToString('yyyyMMddHHmmss'))</VersionSuffix>
+        <VersionSuffix>alpha-$([System.DateTime]::Now.ToString('yyyyMMddHHmm'))</VersionSuffix>
         <PackageVersion>$(Version)</PackageVersion>
     </PropertyGroup>
 

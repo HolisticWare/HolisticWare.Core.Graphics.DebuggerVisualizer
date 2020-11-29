@@ -2,8 +2,69 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <!--
+        <TargetFrameworks>netstandard2.0</TargetFrameworks>
+        -->
+        <LangVersion>Latest</LangVersion>
+        <RootNamespace>
+            Core.Graphics.DebuggerVisualizer.Data
+        </RootNamespace>
+        <!--
+        If moved to separate PropertyGroup - UI is cleared?!?!
+        -->
+        <PackOnBuild>true</PackOnBuild>
+        <PackageId>
+            HolisticWare.Core.Graphics.DebuggerVisualizer.Data
+        </PackageId>
+        <Title>
+            HolisticWare.Core.Graphics.DebuggerVisualizer.Data
+        </Title>
+        <summary>
+            DebuggerVisualizer tools for .NET Data - serialization schemas for plotly etc
+        </summary>
+        <Description>
+            DebuggerVisualizer tools for .NET Data - serialization schemas for plotly etc
+        </Description>
+        <Owners>Microsoft, Xamarin, HolisticWare, moljac</Owners>
+        <Authors>Microsoft, Xamarin, HolisticWare, moljac</Authors>
+        <Copyright>2020</Copyright>
+        <ProjectUrl>
+            https://github.com/HolisticWare/HolisticWare.Core.Graphics.DebuggerVisualizer
+        </ProjectUrl>
+        <PackageProjectUrl>
+            https://github.com/HolisticWare/HolisticWare.Core.Graphics.DebuggerVisualizer
+        </PackageProjectUrl>
+        <RepositoryUrl>
+            https://github.com/HolisticWare/HolisticWare.Core.Graphics.DebuggerVisualizer
+        </RepositoryUrl>
+        <iconUrl>
+            https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5
+        </iconUrl>
+        <PackageIconUrl>
+            https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5        
+        </PackageIconUrl>
+        <license>LICENSE</license>
+        <licenseUrl>
+            https://github.com/HolisticWare/HolisticWare.Core.Graphics.DebuggerVisualizer/blob/master/LICENSE
+        </licenseUrl>
+        <PackageLicenseUrl>
+            https://github.com/HolisticWare/HolisticWare.Core.Graphics.DebuggerVisualizer/blob/master/LICENSE
+        </PackageLicenseUrl>
+        <VersionPrefix>0.0.1</VersionPrefix>
+        <!--
+        VersionSuffix - For debugging and local nuget feed 
+        -->        
+        <VersionSuffix>alpha-$([System.DateTime]::Now.ToString('yyyyMMddHHmm'))</VersionSuffix>
+        <PackageVersion>$(Version)</PackageVersion>
     </PropertyGroup>
   
+    <PropertyGroup>
+        <!-- 
+        put the package output into a nuget test folder 
+        -->
+        <PackageOutputPath>../../output</PackageOutputPath>
+    </PropertyGroup>
+    
     <ItemGroup>
         <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
         <PackageReference Include="System.CodeDom" Version="5.0.0" />
