@@ -1,19 +1,3 @@
-string[] folder_patterns = new string[]
-{
-    "./externals/",
-    "./output/",
-    "./**/.vs/",
-    "./source/**/bin/",
-    "./source/**/obj/",
-    "./samples/**/bin/",
-    "./samples/**/obj/",
-    "./samples/**/tools/",
-};
-
-string[] file_patterns = new string[]
-{
-    "./**/*.binlog",
-};
 
 //---------------------------------------------------------------------------------------
 Task ("clean")
@@ -31,7 +15,7 @@ Task ("clean-folders")
     (
         () =>
         {
-            foreach(string folder in folder_patterns)
+            foreach(string folder in clean_folder_patterns)
             {
                 DirectoryPathCollection directories = GetDirectories(folder);
                 foreach(DirectoryPath dp in directories)
