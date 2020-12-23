@@ -33,12 +33,6 @@
         <RepositoryUrl>
             https://github.com/HolisticWare/HolisticWare.Core.Graphics.DebuggerVisualizer
         </RepositoryUrl>
-        <iconUrl>
-            https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5
-        </iconUrl>
-        <PackageIconUrl>
-            https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5        
-        </PackageIconUrl>
         <license>LICENSE</license>
         <licenseUrl>
             https://github.com/HolisticWare/HolisticWare.Core.Graphics.DebuggerVisualizer/blob/master/LICENSE
@@ -46,6 +40,12 @@
         <PackageLicenseUrl>
             https://github.com/HolisticWare/HolisticWare.Core.Graphics.DebuggerVisualizer/blob/master/LICENSE
         </PackageLicenseUrl>
+        <iconUrl>
+            https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5
+        </iconUrl>
+        <PackageIconUrl>
+            https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5        
+        </PackageIconUrl>
         <VersionPrefix>0.0.1</VersionPrefix>
         <!--
         VersionSuffix - For debugging and local nuget feed 
