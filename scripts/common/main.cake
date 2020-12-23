@@ -47,7 +47,7 @@ Task ("clean-files")
     (
         () =>
         {
-            foreach(string file in file_patterns)
+            foreach(string file in clean_file_patterns)
             {
                 FilePathCollection files = GetFiles(file);
                 foreach(FilePath fp in files)
