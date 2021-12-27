@@ -25,10 +25,10 @@ Task("nuget-pack")
 							.WithProperty("PackageOutputPath", "../../output")
 				);
 
-				DotNetPack
+				DotNetCorePack
 				(
-					prj,
-					new DotNetPackSettings
+					prj.ToString(),
+					new DotNetCorePackSettings
 					{
 						Configuration = "Release",
 						OutputDirectory = "../../output/"

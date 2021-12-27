@@ -42,8 +42,10 @@ Task("libs-msbuild-solutions")
                         new MSBuildSettings
                         {
                             Configuration = configuration,
+                            Restore = true,
                         }
                         //.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
+                        .WithRestore()
                     );
                 }
             }
@@ -92,8 +94,10 @@ Task("libs-msbuild-projects")
                         new MSBuildSettings
                         {
                             Configuration = configuration,
+                            Restore = true,
                         }
                         //.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
+                        .WithRestore()
                     );
                 }
             }
@@ -141,10 +145,11 @@ public void Build(string pattern)
 				new MSBuildSettings
 				{
 					Configuration = configuration,
+                    Restore = true,
 				}
 				//.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
 				.WithProperty("AndroidClassParser", "jar2xml")
-				
+				.WithRestore()
 			);
 		}
 	}
