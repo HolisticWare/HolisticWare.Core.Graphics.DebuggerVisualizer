@@ -1,18 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <!--
         <TargetFrameworks>netstandard2.0</TargetFrameworks>
-        -->
         <LangVersion>Latest</LangVersion>
-        <RootNamespace>
-            Core.Graphics.DebuggerVisualizer.Legacy
-        </RootNamespace>
+        <RootNamespace>Core.Graphics.DebuggerVisualizer.Legacy</RootNamespace>
+        <AssemblyName>HolisticWare.Core.Graphics.DebuggerVisualizer.Legacy</AssemblyName>
+    </PropertyGroup>
+
+    <PropertyGroup>
         <!--
-        If moved to separate PropertyGroup - UI is cleared?!?!
+        If moved to separate PropertyGroup - UI in VSMac4 is cleared?!?!
         -->
         <PackOnBuild>true</PackOnBuild>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>
             HolisticWare.Core.Graphics.DebuggerVisualizer.Legacy
         </PackageId>
@@ -25,8 +25,8 @@
         <Description>
             DebuggerVisualizer tools for .NET Legacy classes used in samples
         </Description>
-        <Owners>Microsoft, Xamarin, HolisticWare, moljac</Owners>
-        <Authors>Microsoft, Xamarin, HolisticWare, moljac</Authors>
+        <Owners>HolisticWare, moljac</Owners>
+        <Authors>HolisticWare, moljac</Authors>
         <Copyright>2020</Copyright>
         <ProjectUrl>
             https://github.com/HolisticWare/HolisticWare.Core.Graphics.DebuggerVisualizer
