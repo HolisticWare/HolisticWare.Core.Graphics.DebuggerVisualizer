@@ -13,6 +13,7 @@ Task("nuget-pack")
 			foreach(FilePath prj in LibrarySourceProjects)
 			{
 				Information($"Project: 		{prj}");
+
 				MSBuild
 				(
 					prj,
@@ -22,6 +23,16 @@ Task("nuget-pack")
 							.WithTarget("Pack")
 							//.WithProperty("PackageVersion", NUGET_VERSION)
 							.WithProperty("PackageOutputPath", "../../output")
+				);
+
+				DotNetPack
+				(
+					prj,
+					new DotNetPackSettings
+					{
+						Configuration = "Release",
+						OutputDirectory = "../../output/"
+					}
 				);
 			}
 
