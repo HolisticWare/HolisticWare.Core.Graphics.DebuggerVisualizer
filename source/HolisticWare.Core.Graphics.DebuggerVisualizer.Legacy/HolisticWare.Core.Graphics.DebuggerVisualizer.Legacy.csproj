@@ -1,12 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0</TargetFrameworks>
-        <LangVersion>Latest</LangVersion>
         <RootNamespace>Core.Graphics.DebuggerVisualizer.Legacy</RootNamespace>
         <AssemblyName>HolisticWare.Core.Graphics.DebuggerVisualizer.Legacy</AssemblyName>
-    </PropertyGroup>
-
+    </PropertyGroup> 
+    
     <PropertyGroup>
         <!--
         If moved to separate PropertyGroup - UI in VSMac4 is cleared?!?!
@@ -25,44 +23,6 @@
         <Description>
             DebuggerVisualizer tools for .NET Legacy classes used in samples
         </Description>
-        <Owners>HolisticWare, moljac</Owners>
-        <Authors>HolisticWare, moljac</Authors>
-        <Copyright>2020</Copyright>
-        <ProjectUrl>
-            https://github.com/HolisticWare/HolisticWare.Core.Graphics.DebuggerVisualizer
-        </ProjectUrl>
-        <PackageProjectUrl>
-            https://github.com/HolisticWare/HolisticWare.Core.Graphics.DebuggerVisualizer
-        </PackageProjectUrl>
-        <RepositoryUrl>
-            https://github.com/HolisticWare/HolisticWare.Core.Graphics.DebuggerVisualizer
-        </RepositoryUrl>
-        <iconUrl>
-            https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5
-        </iconUrl>
-        <PackageIconUrl>
-            https://secure.gravatar.com/avatar/b662959e712466f393541935b664d3c5        
-        </PackageIconUrl>
-        <license>LICENSE</license>
-        <licenseUrl>
-            https://github.com/HolisticWare/HolisticWare.Core.Graphics.DebuggerVisualizer/blob/master/LICENSE
-        </licenseUrl>
-        <PackageLicenseUrl>
-            https://github.com/HolisticWare/HolisticWare.Core.Graphics.DebuggerVisualizer/blob/master/LICENSE
-        </PackageLicenseUrl>
-        <VersionPrefix>0.0.1</VersionPrefix>
-        <!--
-        VersionSuffix - For debugging and local nuget feed 
-        -->        
-        <VersionSuffix>alpha-$([System.DateTime]::Now.ToString('yyyyMMddHHmm'))</VersionSuffix>
-        <PackageVersion>$(Version)</PackageVersion>
-    </PropertyGroup>
-  
-    <PropertyGroup>
-        <!-- 
-        put the package output into a nuget test folder 
-        -->
-        <PackageOutputPath>../../output</PackageOutputPath>
     </PropertyGroup>
 
     <ItemGroup>
